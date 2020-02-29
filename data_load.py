@@ -31,7 +31,7 @@ df_numeric = df_clean.select_dtypes(include=[np.number])
 print("Dataframe size after removing non-numeric columns: ", df_numeric.shape)
 
 ## renaming columns
-df_numeric.columns = list(range(0,df_numeric.shape[1]))
+df_numeric.columns = list(range(1,df_numeric.shape[1]+1))
 
 normalized_df_min_max=(df_numeric-df_numeric.min())/(df_numeric.max()-df_numeric.min())
 normalized_df_mean=(df_numeric-df_numeric.mean())/(df_numeric.std())
