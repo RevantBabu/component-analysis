@@ -28,4 +28,4 @@ a. mean -> mean normalized; mm -> min_max normalized
 3. Plot of variance explained each component & cumulaitve variance {97 components}
 
 
-![alt text](http://github.com/RevantBabu/component-analysis/blob/master/results/mean.png?raw=true "PCA results")
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/mean.png?raw=true "PCA results")
