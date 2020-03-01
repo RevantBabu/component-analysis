@@ -28,4 +28,14 @@ a. mean -> mean normalized; mm -> min_max normalized
 3. Plot of variance explained each component & cumulaitve variance {97 components}
 
 
-![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/mean.png?raw=true "PCA results")
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/variance.png?raw=true "PCA variance")
+
+4. Score plot, (PCA1, PCA2) values for each participant
+
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/score.png?raw=true "PCA score")
+
+5. Weights/Contirubtions of features in PCA1, PCA2
+
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/wts.png?raw=true "PCA wts")
+
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/wts_1.png?raw=true "PCA wts")
