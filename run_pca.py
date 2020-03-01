@@ -71,3 +71,17 @@ plt.xlabel('PCA1')
 plt.ylabel('PCA2')
 ax.yaxis.set_label_coords(-0.08,0.5)
 plt.savefig("./results/wts_1.png")
+
+df1 = pd.read_csv('data_processed/mean_n.csv', index_col=0)
+corr = np.zeros(df1.shape[1])
+
+fig = plt.figure(figsize=(8,8))
+ax = plt.subplot(111)
+for i in range(1, df1.shape[1]+1):
+	corr[i-1] = np.correlate(df1["1"].tolist(), df1[str(i)].tolist())
+ax.plot(corr, 'o-', markersize=5)
+plt.title('Correlation of 1st feature with rest')
+plt.xlabel('Feature')
+plt.ylabel('correlation value')
+ax.yaxis.set_label_coords(-0.08,0.5)
+plt.savefig("./results/correlation.png")

@@ -39,3 +39,7 @@ a. mean -> mean normalized; mm -> min_max normalized
 ![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/wts.png?raw=true "PCA wts")
 
 ![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/wts_1.png?raw=true "PCA wts")
+
+6. Correlation of first feature with rest of the features
+
+![alt text](https://github.com/RevantBabu/component-analysis/blob/master/results/correlation.png?raw=true "Feature correlations")
