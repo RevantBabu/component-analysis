@@ -55,9 +55,8 @@ plt.savefig("./results/wts.png")
 
 
 transform = pca.transform(df1)
-
-np.savetxt('./results/PC1.txt', transform[:, 0], delimiter=',')
-np.savetxt('./results/PC2.txt', transform[:, 1], delimiter=',')
+pd.DataFrame(list(zip(df1.index.tolist(), transform[:, 0], transform[:, 1])), columns =['Participant', 'PC1', 'PC2']).to_csv("results/pc.csv", index=False)
+pd.DataFrame(list(zip(df1.index.tolist(), transform[:, 0], transform[:, 1])), columns =['Participant', 'PC1', 'PC2']).to_excel("results/pc.xlsx", index=False)
 
 fig = plt.figure(figsize=(8,8))
 ax = plt.subplot(111)

@@ -15,7 +15,7 @@ print(df3.shape)
 print(df4.shape)
 print(df5.shape)
 
-df_conact = pd.concat([df1, df2, df3, df4, df5], axis=1, join='outer')
+df_conact = pd.concat([df1, df2, df3, df4, df5], axis=1, join='outer', sort=False)
 print("Merged Dataframe size: ", df_conact.shape)
 
 print("Number of nulls: ", df_conact.isnull().sum().sum())
@@ -33,6 +33,8 @@ print("Dataframe size after removing non-numeric columns: ", df_numeric.shape)
 ## renaming columns
 df_numeric.columns = list(range(1,df_numeric.shape[1]+1))
 
+df_numeric.to_csv("results/df_full.csv")
+df_numeric.to_excel("results/df_full.xlsx")
 normalized_df_min_max=(df_numeric-df_numeric.min())/(df_numeric.max()-df_numeric.min())
 normalized_df_mean=(df_numeric-df_numeric.mean())/(df_numeric.std())
 
